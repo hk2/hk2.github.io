@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>グローバル・テック・オブザーバー</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: "Hiragino Mincho ProN", "Yu Mincho", serif;
+      background: #fafaf8;
+      color: #1a1a1a;
+    }
+
+    /* Header */
+    header {
+      border-bottom: 2px solid #1a1a1a;
+      padding: 16px 40px;
+      display: flex;
+      align-items: baseline;
+      gap: 24px;
+    }
+    .site-name {
+      font-size: 1.6rem;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+    }
+    .site-section {
+      font-size: 0.8rem;
+      font-family: "Hiragino Sans", "Yu Gothic", sans-serif;
+      color: #666;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    nav {
+      margin-left: auto;
+      font-family: "Hiragino Sans", "Yu Gothic", sans-serif;
+      font-size: 0.8rem;
+      color: #444;
+      display: flex;
+      gap: 20px;
+    }
+
+    /* Article */
+    .container {
+      max-width: 700px;
+      margin: 48px auto;
+      padding: 0 24px;
+    }
+    .category {
+      font-family: "Hiragino Sans", "Yu Gothic", sans-serif;
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: #c0392b;
+      margin-bottom: 16px;
+    }
+    h1 {
+      font-size: 2.2rem;
+      line-height: 1.4;
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+    .deck {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: #444;
+      margin-bottom: 24px;
+      font-family: "Hiragino Sans", "Yu Gothic", sans-serif;
+    }
+    .byline {
+      font-family: "Hiragino Sans", "Yu Gothic", sans-serif;
+      font-size: 0.8rem;
+      color: #555;
+      border-top: 1px solid #ddd;
+      border-bottom: 1px solid #ddd;
+      padding: 10px 0;
+      margin-bottom: 32px;
+      display: flex;
+      justify-content: space-between;
+    }
+    p {
+      font-size: 1.05rem;
+      line-height: 1.8;
+      margin-bottom: 20px;
+      color: #222;
+    }
+    p:first-of-type::first-letter {
+      font-size: 3.2rem;
+      font-weight: 700;
+      float: left;
+      line-height: 0.9;
+      margin: 8px 8px 0 0;
+      color: #1a1a1a;
+    }
+    h2 {
+      font-size: 1.4rem;
+      font-weight: 700;
+      margin: 36px 0 16px;
+      color: #1a1a1a;
+    }
+    blockquote {
+      border-left: 3px solid #1a1a1a;
+      margin: 28px 0;
+      padding: 4px 0 4px 20px;
+      font-size: 1.15rem;
+      color: #333;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <span class="site-name">グローバル・テック・オブザーバー</span>
+  <span class="site-section">科学・テクノロジー</span>
+  <nav>
+    <span>国際</span>
+    <span>ビジネス</span>
+    <span>科学</span>
+    <span>文化</span>
+    <span>オピニオン</span>
+  </nav>
+</header>
+
+<div class="container">
+  <div class="category">科学・テクノロジー</div>
+
+  <h1>職場での情報処理方法にもたらされた静かな革命</h1>
+
+  <p class="deck">
+    AIツールが日常業務に溶け込む中、研究者たちは問う。我々は本当に時間を節約しているのか、それとも単に認知負荷の掛かる場所を移動させているだけなのか。
+  </p>
+
+  <div class="byline">
+    <span>執筆: <strong>マーガレット・L・フォーサイス</strong> &nbsp;·&nbsp; スタッフライター</span>
+    <span>2025年5月14日</span>
+  </div>
+
+  <p>
+    3年前、シカゴにある中堅コンサルティングファームが密かにある実験を行った。アナリストの半数にAIアシスタントによる要約ツールのスイートへのアクセス権を与え、残りの半数には従来通りの作業を続けさせたのだ。匿名を条件に本誌に共有されたその結果は驚くべきものであり、経営陣が期待していたものとは必ずしも一致しなかった。
+  </p>
+
+  <p>
+    1日あたりのタスク完了数で測定された生産性は、AIを利用したグループで約18%向上した。しかし、自己申告による認知的疲労も同様に増加していた。「要約作業を外部委託することで、精神的な余裕が生まれると想定していました」と、この調査に関与したシニアパートナーの一人は語る。「しかし実際には、AIの出力をレビューし、推敲し、書き直すことにその余裕を費やしていたのです。作業のスピードは上がりましたが、楽になったとは感じられませんでした。」
+  </p>
+
+  <h2>アテンション・エコノミーと自動化エコノミーの出会い</h2>
+
+  <p>
+    この矛盾こそが、現在の職場におけるAIの核心にある。かつては研究室にしか存在しなかった、長文のレポートを要約し、数秒で文書を翻訳し、人間に近い精度で文法エラーを指摘する機能を持つツールが、今や数百万人のオフィスワーカーが毎日使用するメールクライアント、ワープロ、ブラウザの拡張機能に標準搭載されている。
+  </p>
+
+  <blockquote>
+    「ボトルネックは決してタイピング速度や読解速度ではありませんでした。それは常に判断力――何が重要で何が重要でないかを知ること――だったのです。その部分は、今のところ、人間独自の領域として頑なに残っています。」
+  </blockquote>
+
+  <p>
+    ノースブリッジ大学でヒューマン・コンピュータ・インタラクションを研究する認知科学者のアニータ・クリシュナムルティ博士は、これらのツールは間違った問題を解決しようとしていると主張する。「ボトルネックは決してタイピング速度や読解速度ではありませんでした」と、彼女は先月のビデオ通話で私に語った。「それは常に判断力――何が重要で何が重要でないかを知ること――だったのです。その部分は、今のところ、人間独自の領域として頑なに残っています。」
+  </p>
+
+  <p>
+    それでもツールは改善を続け、普及は加速している。デジタル研究所が先月発表した報告書によると、アメリカの就労者の43%が少なくとも週に1回は何らかのAIアシスタンスを使用しているという。これはわずか18ヶ月前の27%からの増加である。ナレッジワーカーに限れば、この数字は61%に跳ね上がる。
+  </p>
+
+  <h2>利便性がインフラとなる時</h2>
+
+  <p>
+    おそらく、より重大な変化はAIがどのように使われているかではなく、どれほど「見えなく」なっているかにあるだろう。初期のユーザーはしばしば、AIツールを特定のタスクのために意図的に「オン」にする明確な選択肢として語っていた。しかし現在、ツールは環境に溶け込み、バックグラウンドで動作し、オンデマンドで利用可能になり、読む、書く、コミュニケーションを取るといった日常のリズムに織り込まれるようになっている。
+  </p>
+
+  <p>
+    このような一般化は、生産性の指標を超えた疑問を投げかける。もし自分の書いた文章の一部が、読者に届く前にアルゴリズムによって密かに洗練されているとしたら、そこで聞こえているのは誰の声なのだろうか。もし複雑なレポートが、他の何百万もの文書で訓練されたモデルによって要約されるとしたら、どのような微妙なニュアンスが受け継がれ、あるいは失われてしまうのだろうか。
+  </p>
+
+  <p>
+    今のところ、多くのユーザーはこのような疑問を抱いていないようだ。彼らは概して満足している。数々の調査で支配的な感情は「安堵」である。受信トレイが減る安堵、初稿が早く書ける安堵、そして本当に重要な3つの文を見つけるために40ページのPDFを読み解かなくて済むという安堵だ。
+  </p>
+
+  <p>
+    その安堵が真に得られたものなのか、それとも単に問題を先送りしているだけなのかは、まだ分からない。
+  </p>
+</div>
+
+</body>
+</html>
