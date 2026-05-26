@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ClipXfm - A lightweight, high-speed desktop utility that intercepts clipboard copies to instantly translate, summarize, or rewrite text using AI.">
+  <title>ClipXfm – AI Clipboard Transformer</title>
+  <link rel="icon" type="image/png" href="app-icon.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <img src="app-icon.png" alt="ClipXfm Logo">
+    <div>
+      <h1>ClipXfm</h1>
+      <p style="margin: 0; font-size: 0.95rem; color: #64748b;">AI-Powered Clipboard Transformer</p>
+    </div>
+  </header>
+
+  <main>
+    <p>
+      <strong>ClipXfm</strong> is a lightweight, blazingly fast desktop utility that automatically monitors your clipboard. Whenever you copy text, a small floating toolbar instantly appears near your mouse cursor. Click a button to run AI tasks like summarization, translation, or grammar check, and copy the results back in a single action.
+    </p>
+
+    <h2>✨ Key Features</h2>
+    <ul>
+      <li><strong>Automatic Interception:</strong> Runs quietly in your system tray and shows a toolbar only when text is copied.</li>
+      <li><strong>Hybrid AI Engine:</strong> Stream answers from cloud providers (Google Gemini, OpenAI, Anthropic) or connect to offline local LLMs via Ollama or LM Studio.</li>
+      <li><strong>Custom Action Buttons:</strong> Edit a simple configuration file to define up to 6 custom buttons, icons, and prompts.</li>
+      <li><strong>Secure Storage:</strong> API keys are securely saved locally using the operating system's secure credential store.</li>
+      <li><strong>Prompt Injection Defense:</strong> Employs XML encapsulation, role segregation, and prompt guards to protect your workstation.</li>
+    </ul>
+
+    <h2>🚀 Quick Start &amp; Usage</h2>
+    <ol>
+      <li>Copy any text from any application (browser, PDF, document editor).</li>
+      <li>The ClipXfm toolbar will slide open near your mouse pointer.</li>
+      <li>Click a command button (e.g. Summarize, Translate) or enter custom instructions.</li>
+      <li>The AI streams the result in real-time. Click <strong>Copy &amp; Close</strong> to copy the output back into your clipboard.</li>
+    </ol>
+
+    <h2>⚙️ Customizing Commands</h2>
+    <p>
+      You can define custom prompts and shortcuts by creating a <code>commands.json</code> file in your app's Data Directory (open settings from the tray icon and click "Open Commands Directory" to locate it).
+    </p>
+    <pre><code>[
+  {
+    "label": "Bullet Points",
+    "icon": "list",
+    "systemPrompt": "Convert the text into a concise bullet point list. Output in \${lang}."
+  },
+  {
+    "label": "Translate",
+    "icon": "languages",
+    "systemPrompt": "Translate the text into \${lang}. Provide ONLY the translation."
+  }
+]</code></pre>
+    <p class="note">The Target Language specified in your UI settings automatically replaces the <code>\${lang}</code> variable.</p>
+
+    <h2>🛡️ Windows SmartScreen Warning</h2>
+    <p>
+      As the application installer is unsigned, Windows SmartScreen will block execution on first launch. You can securely bypass this warning:
+    </p>
+    <ul>
+      <li>In the blue "Windows protected your PC" prompt, click the <strong>"More info"</strong> link under the text.</li>
+      <li>Click the <strong>"Run anyway"</strong> button that appears in the bottom right corner of the window.</li>
+    </ul>
+  </main>
+
+  <footer>
+    <span>Created by hk2 &copy; 2026</span>
+    <div>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="https://tally.so/r/816pxk" target="_blank" rel="noopener noreferrer">Feedback</a>
+    </div>
+  </footer>
+
+</body>
+</html>
